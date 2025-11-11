@@ -18,7 +18,7 @@ int main(){
     TF = 1.8*TC + 32; //convert celcius to farnheid
 
     printf("\nC\tK\tF"); //print the letters 
-    printf("\n%.2f\t%.2f\t%.2f\n",TC , TK, TF); //print the values
+    printf("\n%.2lf\t%.2lf\t%.2lf\n",TC , TK, TF); //print the values
 
-    return 0;//end the main
+    return 0; //end the main
 }
