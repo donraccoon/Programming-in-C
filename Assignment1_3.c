@@ -6,12 +6,12 @@ Assignment: 1.3
 
 #include<stdio.h>
 
-int main(){
+int main(void){
     double TC; // Temperature in Celsius
     double TK; // Temperature in Kelvin
     double TF; // Temperature in Fahrenheit
 
-    printf("Enter temperature in Celsius: "); 
+    //printf("Enter temperature in Celsius: "); 
     scanf("%lf", &TC); //The input as a double to temp in celsius
 
     TK =  TC + 273.15; //convert celsius to kelviun
