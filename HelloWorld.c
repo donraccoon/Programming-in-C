@@ -1,3 +1,9 @@
+/*
+Student: Lars Meijer
+Number: s3662780
+Assignment: Test
+*/
+
 #include<stdio.h>
 
 int main(){
