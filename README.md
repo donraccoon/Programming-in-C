@@ -28,16 +28,10 @@ After successful compilation, you can run the executable from your terminal usin
 ./my_program
 
 
-### Adding Warnings and Debugging Symbols (Recommended)
+### The commands i use:
+// the compile command: gcc -std=c99 -Wall -Werror "name of the .c file" -lm -o Hello 
+// the run command ./Hello because i named the executable Hello for easy running the file
 
-For better practice, always include warning flags and debugging symbols during development. This helps catch potential issues early.
-
-gcc -Wall -Wextra -g program.c -o my_program
-
-
-* **`-Wall` / `-Wextra`**: Enable all (and extra) common compiler warnings.
-
-* **`-g`**: Include debugging information, useful if you need to use a debugger like GDB.
 
 ## 🚀 Get Started
 
