@@ -4,6 +4,10 @@ Number: s3662780
 Assignment: Test
 */
 
+// the compile command: gcc -std=c99 -Wall -Werror "name of the .c file" -lm -o Hello 
+// the run command ./Hello because i named the executable Hello
+
+
 #include<stdio.h>
 
 int main(){
