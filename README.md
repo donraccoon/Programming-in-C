@@ -28,9 +28,20 @@ After successful compilation, you can run the executable from your terminal usin
 ./my_program
 
 
-### The commands i use:
-// the compile command: gcc -std=c99 -Wall -Werror "name of the .c file" -lm -o Hello 
-// the run command ./Hello because i named the executable Hello for easy running the file
+### Compilation Instructions
+
+I use the following command to compile, which ensures strict error checking and math library support:
+
+`gcc -std=c99 -Wall -Werror [filename.c] -lm -o Hello`
+
+* `-std=c99`: Uses the C99 standard.
+* `-Wall -Werror`: Shows all warnings and treats them as errors (good for debugging).
+* `-lm`: Links the **math.h** library.
+* `-o Hello`: Names the executable "Hello" For easy running the program.
+
+**To run the program:**
+`./Hello`
+
 
 
 ## 🚀 Get Started
