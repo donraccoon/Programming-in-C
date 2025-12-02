@@ -1,7 +1,7 @@
 /*
 Student1: Lars Meijer
 Number1: s3662780
-Student2: Rob
+Student2: Rob Loman
 Number1: s3318559
 Assignment: 3.3
 */
@@ -24,6 +24,7 @@ int prime(int number){
             }
         }
     
+        // If not a prime number, return false (0), if a prime number, return true (1)
         if (result == 0 ){
             return 0;
         }
@@ -36,12 +37,19 @@ int main(){
     int lowerlimit;
     int upperlimit;
 
+    // Look for input 
     scanf("%d \n%d", &lowerlimit, &upperlimit);
 
-    for(int i = lowerlimit; i <= upperlimit; i++)
+    if (upperlimit < lowerlimit){ //if the lower limit is higer than the upperlimit swaps them around so upper becomes lower and vise versa
+        int temp = lowerlimit; // save the lowerlimit in a temporary variable, so it is not overwritten
+        lowerlimit = upperlimit;
+        upperlimit = temp;
+    }
+
+    for(int i = lowerlimit; i <= upperlimit; i++) // gives all the numbers betweeen and including the lower and upper limit
     {
         if(prime(i)){
-            printf("%d\n",i);
+            printf("%d\n",i); // prints the prime numbers
         }
     }
 
