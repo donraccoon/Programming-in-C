@@ -19,6 +19,8 @@ int count_word(const char *line, const char *word_find){ // a function for count
     size_t len_line = strlen(line); // gets the length of the line being searched
     size_t len_word = strlen(word_find); // gets the length of the input word
 
+    if (len_word == 0 || len_word > len_line) return 0;
+
     for (size_t i = 0; i <= len_line - len_word; i++){ // Loop through the line
         if (strncmp(&line[i], word_find, len_word) == 0){// Check if substring at current position matches the word
             count++; // true add up the count
@@ -29,7 +31,7 @@ int count_word(const char *line, const char *word_find){ // a function for count
 
 int main(int argc, char *argv[])
 {
-    if (argc <2) {fprintf(stderr, "No argument given"); return 1;} //prints the no argument given error if no argument is given
+    if (argc <2) {fprintf(stderr, "No argument given\n"); return 0;} //prints the no argument given error if no argument is given
 
     char buf[MAX_LINE];   // Buffer for storing the input line
     const char *word = argv[1]; // reads the first word after the run command 
